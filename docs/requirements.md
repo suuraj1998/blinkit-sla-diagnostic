@@ -64,12 +64,12 @@ The Regional Operations Director needs to identify which dark-store clusters, ho
 | **Cut By** | City, dark-store cluster, hour band (Morning, Lunch, Afternoon, Evening), product category, and calendar day. |
 | **Target** | At least 80% (`>= 80%`) in every dark-store cluster and every hour band. |
 | **Deadline** | End of next quarter. |
-| **Starting Point** | `[PENDING PART B — fill with overall compliance from Part B Task 3(a)]` |
+| **Starting Point** | 79.01% |
 | **Owner** | Regional Operations Director |
 | **Source** | `orders` table in `blinkit_sla.db` |
 
 **Boundary Note (`<= 10` vs. `< 10`):**
-Defining whether an order delivered in exactly 10 minutes counts as on time (`delivery_minutes <= 10`) or late (`delivery_minutes < 10`) must be explicitly documented before analysis begins. Because delivery times are recorded as whole integers and many orders cluster right at the 10-minute mark, changing the boundary dramatically shifts the headline number: under `<= 10`, overall compliance is `[PENDING PART B]`%, whereas under `< 10`, it drops to `[PENDING PART B]`%. Writing this rule down prevents teams from arguing over conflicting numbers during weekly reviews.
+Defining whether an order delivered in exactly 10 minutes counts as on time (`delivery_minutes <= 10`) or late (`delivery_minutes < 10`) must be explicitly documented before analysis begins. Because delivery times are recorded as whole integers and many orders cluster right at the 10-minute mark, changing the boundary dramatically shifts the headline number: under `<= 10`, overall compliance is 79.01%, whereas under `< 10`, it drops to 57.75%. Writing this rule down prevents teams from arguing over conflicting numbers during weekly reviews.
 
 ---
 
